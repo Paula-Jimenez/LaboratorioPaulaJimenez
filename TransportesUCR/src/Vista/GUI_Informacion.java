@@ -67,6 +67,13 @@ public class GUI_Informacion extends javax.swing.JPanel {
          this.jt_Cedula.setEnabled(true);
          this.jt_Placa.setEnabled(true);
      }
+      public void deshabilitarNumeroR()
+     {
+         this.jt_NumeroRegistro.setEnabled(true);
+         this.jt_Nombre.setEnabled(true);
+         this.jt_Cedula.setEnabled(false);
+         this.jt_Placa.setEnabled(true);
+     }
      public void estadoInicial()
      {
          this.jt_NumeroRegistro.setEnabled(true);
@@ -78,7 +85,7 @@ public class GUI_Informacion extends javax.swing.JPanel {
     {
        this.jt_NumeroRegistro.setText(controlador.colocarNumeroR());
     }
-  
+//  
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

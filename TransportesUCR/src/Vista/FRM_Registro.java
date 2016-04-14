@@ -61,6 +61,10 @@ public class FRM_Registro extends javax.swing.JFrame {
         this.gUI_Botones1.habilitarOpciones();
         this.gUI_Informacion1.habilitarOpciones();
     }
+      public void deshabilitarNumeroR()
+      {
+          this.gUI_Informacion1.deshabilitarNumeroR();
+      }
      public void mostrarMensaje(String mensaje)
     {
         JOptionPane.showMessageDialog(null,mensaje);

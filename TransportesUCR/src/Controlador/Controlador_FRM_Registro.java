@@ -43,6 +43,7 @@ public class Controlador_FRM_Registro implements ActionListener{
         if(e.getActionCommand().equals("Modificar"))
         {
             metodos.modificarRegistro(frm_Registro.devolverInformacion());
+            frm_Registro.deshabilitarNumeroR();
             frm_Registro.limpiarInterfaz();
             frm_Registro.estadoInicial();
             frm_Registro.mostrarMensaje("Se Modifico el registro correctamente");
